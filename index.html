@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Corinthia:wght@400;700&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Swiper JS-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <title>Traveling Agency</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#"
+          ><span><i class="fas fa-umbrella-beach"></i></span> Traveler</a
+        >
+      </div>
+      <div class="nav-list">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#destinations" class="nav-link">Destinations</a>
+        <a href="#" class="nav-link">Flight Tickets</a>
+        <a href="#" class="nav-link">Car Rentals</a>
+        <a href="#contact" class="nav-link">Customer Support</a>
+      </div>
+    </nav>
+    <!--End of navbar-->
+    <!--Menu-->
+    <div class="menu">
+      <div class="line line-1"></div>
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
+    </div>
+    <!--End of Menu-->
+    <div class="container">
+      <!--Section 1-->
+      <section class="section-1" id="home">
+        <div class="banner">
+          <h1 class="banner-heading">
+            <span class="heading-1">TOP DESTINATIONS</span>
+            <span class="heading-2">FLIGHT TICKETS</span>
+            <span class="heading-3">EXCLUSIVE HOTELS</span>
+            <span class="heading-4">ROMANTIC TRIPS</span>
+          </h1>
+          <p class="banner-paragraph">All travels in one place.</p>
+          <button class="custom-btn btn-12">
+            <span>Click!</span><span>Get started today</span>
+          </button>
+        </div>
+      </section>
+      <!--End of Section 1-->
+    </div>
+
+    <!--About Us-->
+    <section class="section-2" id="about-us">
+      <h1 class="about-heading">About Us</h1>
+      <div class="about-heading-line"></div>
+      <div class="video-wrapper">
+        <video class="video" src="/images/video.mp4" controls></video>
+        <div class="controls">
+          <div class="video-bar-wrapper">
+            <div class="video-bar"></div>
+          </div>
+        </div>
+      </div>
+      <p class="section-2-paragraph">
+        <i class="fas fa-globe-americas"></i>
+        Everything you need for an incredible vacation is part of the price,
+        including your flight, a stay at an amazing, all-inclusive resort,
+        private hotel transfers, and even awesome extras like excursions.
+        Get inspired. Get excited. Get Carried Away...
+      </p>
+    </section>
+    <!--End of About Us-->
+
+    <!--Destinations-->
+
+    <section class="section-3" id="destinations">
+      <div class="carousel-container">
+        <div class="mySlides animate">
+          <img src="./images/egypt-1.jpg" alt="slide" />
+          <div class="number">1 / 5</div>
+          <div class="text">Egypt</div>
+        </div>
+
+        <div class="mySlides animate">
+          <img src="./images/eiffel-2.jpg" alt="slide" />
+          <div class="number">2 / 5</div>
+          <div class="text">Eiffel Tower - Paris, France</div>
+        </div>
+
+        <div class="mySlides animate">
+          <img src="./images/bigfen-3.jpg" alt="slide" />
+          <div class="number">3 / 5</div>
+          <div class="text">Big Ben - London, England</div>
+        </div>
+
+        <div class="mySlides animate">
+          <img src="./images/colloseum-4.jpg" alt="slide" />
+          <div class="number">4 / 5</div>
+          <div class="text">Colloseum - Rome, Italy</div>
+        </div>
+
+        <div class="mySlides animate">
+          <img src="./images/liberty-5.jpg" alt="slide" />
+          <div class="number">5 / 5</div>
+          <div class="text">Statue of Liberty - New York, USA</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="prevSlide()">&#10094;</a>
+        <a class="next" onclick="nextSlide()">&#10095;</a>
+
+        <!-- The dots/circles -->
+        <div class="dots-container">
+          <span class="dots" onclick="currentSlide(1)"></span>
+          <span class="dots" onclick="currentSlide(2)"></span>
+          <span class="dots" onclick="currentSlide(3)"></span>
+          <span class="dots" onclick="currentSlide(4)"></span>
+          <span class="dots" onclick="currentSlide(5)"></span>
+        </div>
+      </div>
+    </section>
+    <!--End of Destinations-->
+
+    <!--Pricing Cards-->
+    <section class="section-4" id="continents">
+      <h1 class="about-heading">World Tour</h1>
+      <div class="about-heading-line"></div>
+      <div class="mySwiper">
+        <div class="pricing-cards-wrapper swiper-wrapper">
+          <!--USA-->
+          <div class="pricing-card usa swiper-slide">
+            <div class="pricing-card-front">
+              <h1 class="pricing-card-heading heading-usa">USA</h1>
+              <h3 class="pricing-card-price"></h3>
+              <ul class="pricing-card-list">
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <button class="pricing-card-btn btn-usa">
+                Select Destination
+              </button>
+            </div>
+            <div class="pricing-card-back back-usa">
+              <a href="#">Begin Journey</a>
+            </div>
+          </div>
+
+          <!--Europe-->
+          <div class="pricing-card europe swiper-slide">
+            <div class="pricing-card-front">
+              <h1 class="pricing-card-heading heading-europe">Europe</h1>
+              <h3 class="pricing-card-price"></h3>
+              <ul class="pricing-card-list">
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <button class="pricing-card-btn btn-usa">
+                Select Destination
+              </button>
+            </div>
+            <div class="pricing-card-back back-europe">
+              <a href="#">Begin Journey</a>
+            </div>
+          </div>
+          <!--Africa-->
+          <div class="pricing-card africa swiper-slide">
+            <div class="pricing-card-front">
+              <h1 class="pricing-card-heading heading-africa">Africa</h1>
+              <h3 class="pricing-card-price"></h3>
+              <ul class="pricing-card-list">
+                <li></li>
+
+                <li></li>
+                <li></li>
+              </ul>
+              <button class="pricing-card-btn btn-usa">
+                Select Destination
+              </button>
+            </div>
+            <div class="pricing-card-back back-africa">
+              <a href="#">Begin Journey</a>
+            </div>
+          </div>
+       <!--Australia -->
+          <div class="pricing-card australia swiper-slide">
+            <div class="pricing-card-front">
+              <h1 class="pricing-card-heading heading-australia">Australia</h1>
+              <h3 class="pricing-card-price"></h3>
+              <ul class="pricing-card-list">
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <button class="pricing-card-btn btn-usa">
+                Select Destination
+              </button>
+            </div>
+            <div class="pricing-card-back back-australia">
+              <a href="#">Begin Journey</a>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+    </section>
+    <!--End of Pricing Cards-->
+
+    <!--Contact Form -->
+    <section class="section-5" id="contact"> 
+      <h1 class="about-heading contact">Contact</h1>
+      <div class="contact-heading-line"></div>
+      <div class="contact-wrapper">
+        <div class="contact-details">
+          <div class="phone">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Phone</h3>
+            <p>+123 456 789</p>
+            <p>+987 654 321</p>
+          </div>
+          <div class="adress">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Adress</h3>
+            <p>Shadow On The Wall 123</p>
+            <p>Wall On The Shadow 321</p>
+          </div>
+          <div class="email">
+            <i class="far fa-envelope"></i>
+            <h3>Email</h3>
+            <p>support@gmail.com</p>
+            <p>traveling@gmail.com</p>
+          </div>
+        </div>
+        <h1>Get in Touch</h1>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name">
+          <input type="email" placeholder="Your Email">
+          <textarea placeholder="Your Message"></textarea>
+          <input id="submit-input" type="submit" value="Send Message">
+        </form>
+      </div>
+    </section>
+    <!--End of Contact Form -->
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about-us">About Us</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#continents" class="nocont">Continents</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="copyright">
+        Copyright ©  <a href="https://www.linkedin.com/in/nemanja-kondic-a008a517b/"
+        >Nemanja Kondic 2021.</a>
+      </p>
+    </footer>
+    <!--End of Footer-->
+
+    <!--Swiper JS link-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
